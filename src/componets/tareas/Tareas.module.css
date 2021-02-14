@@ -1,0 +1,80 @@
+.tareas {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  min-height: 204px;
+  /*modificados esto valores para que se vea mejor la tarjeta*/
+  left: 5px;
+  right: 5px;
+  top: 42px;
+  /* UI / White */
+
+  background: #ffffff;
+  /* UI / Bordes */
+
+  border: 1px solid #dfdfda;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.contenido {
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+
+  position: static;
+  min-width: 336px;
+  height: 164px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.asignatura {
+  position: absolute;
+  height: 40px;
+  left: 0px;
+  right: 0px;
+  top: 164px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+
+  /* UI / White */
+
+  background: #ffffff;
+  /* UI / Bordes */
+
+  border: 1px solid #dfdfda;
+  box-sizing: border-box;
+  border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 600px) {
+  .tareas {
+    min-height: 156px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tareas {
+    min-height: 128px;
+  }
+}
