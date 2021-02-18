@@ -1,0 +1,52 @@
+.union {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+
+.union1 {
+  position: absolute;
+  left: 79.17%;
+  right: 12.5%;
+  top: 54.17%;
+  bottom: 0%;
+  background: #1a1a1a;
+}
+
+.union2 {
+  position: absolute;
+  left: 12.5%;
+  right: 79.17%;
+  top: 54.17%;
+  bottom: 0%;
+  background: #1a1a1a;
+}
+
+.union3 {
+  position: absolute;
+  left: 4.17%;
+  right: 4.17%;
+  top: 54.17%;
+  bottom: 37.5%;
+  background: #1a1a1a;
+}
+
+.union4 {
+  position: absolute;
+  left: 29.17%;
+  right: 29.17%;
+  top: 33.33%;
+  bottom: 37.5%;
+  border: 2px solid #1a1a1a;
+  border-radius: 100% 100% 0 0;
+}
+
+.union5 {
+  position: absolute;
+  left: 35.42%;
+  right: 35.42%;
+  top: 0%;
+  bottom: 70.83%;
+  border-radius: 100%;
+  border: 1px solid #1a1a1a;
+}

@@ -1,0 +1,97 @@
+.book {
+  position: absolute;
+  width: 39.75px;
+  height: 40px;
+  background: rgba(1, 206, 170, 0.15);
+  border-radius: 6px;
+}
+
+.book1 {
+  position: absolute;
+  left: 21.43%;
+  right: 21.43%;
+  top: 25%;
+  bottom: 28.57%;
+  background: #01ceaa;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.book2 {
+  position: absolute;
+  left: 17.86%;
+  right: 17.86%;
+  top: 32.14%;
+  bottom: 25%;
+  background: linear-gradient(
+      0deg,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    #4f36d6;
+  border-radius: 1px;
+}
+
+.book3 {
+  position: absolute;
+  left: 50%;
+  right: 21.43%;
+  top: 25%;
+  bottom: 28.57%;
+  background: linear-gradient(
+      0deg,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    #4f36d6;
+  opacity: 0.2;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.vector1 {
+  position: absolute;
+  left: 25%;
+  right: 60.71%;
+  top: 41.07%;
+  bottom: 55.36%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.vector2 {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 48.21%;
+  bottom: 48.21%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.vector3 {
+  position: absolute;
+  left: 25%;
+  right: 32.14%;
+  top: 55.36%;
+  bottom: 41.07%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.vector4 {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 62.5%;
+  bottom: 33.93%;
+  background: #ffffff;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .book {
+    width: 56px;
+    height: 56px;
+  }
+}

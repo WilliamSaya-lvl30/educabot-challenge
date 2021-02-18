@@ -1,80 +1,467 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
 .tareas {
-  /* Auto Layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-
   position: absolute;
-  min-height: 204px;
-  /*modificados esto valores para que se vea mejor la tarjeta*/
-  left: 5px;
-  right: 5px;
+  min-width: 336px;
+  width: 93.7%;
+  max-width: 976px;
   top: 42px;
-  /* UI / White */
-
   background: #ffffff;
-  /* UI / Bordes */
-
   border: 1px solid #dfdfda;
   box-sizing: border-box;
   border-radius: 8px;
 }
 
 .contenido {
-  /* Auto Layout */
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 12px;
-
   position: static;
   min-width: 336px;
-  height: 164px;
+  width: 100%;
   left: 0px;
   top: 0px;
+  margin: 0px 0px;
+  box-sizing: border-box;
+}
 
-  /* Inside Auto Layout */
+.contenidoNuevo {
+  background: linear-gradient(
+      0deg,
+      rgba(39, 168, 255, 0.05),
+      rgba(39, 168, 255, 0.05)
+    ),
+    #ffffff;
+}
 
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+.contenidoCompledato {
+  background: #f8f8f6;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 310.06px;
+  min-height: 40px;
+  left: 12px;
+  top: 12px;
+  box-sizing: border-box;
+}
+
+.actividad {
+  position: static;
+  width: 39.75px;
+  min-height: 40px;
+  left: 0px;
+  top: 0px;
+}
+
+.infoTex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 261.71px;
+  min-height: 37px;
+  left: 47.75px;
+  top: 1.5px;
+  margin-left: 8px;
+}
+
+.infoTex p {
+  position: static;
+  left: 0px;
+  top: 0px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1a1a1a;
   margin: 0px 0px;
 }
 
-.asignatura {
+.infoTex p:last-child {
+  position: static;
+  left: 0px;
+  top: 16px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1a1a1a;
+  margin: 0px 0px;
+}
+
+.tag {
+  position: static;
+  left: 12px;
+  right: 12px;
+  top: 60px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tag div {
+  position: relative;
+}
+
+.nuevo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 4px;
   position: absolute;
+  width: 55px;
+  height: 20px;
+  left: 49px;
+  top: 0px;
+  background: #27a8ff;
+  border-radius: 3px;
+}
+
+.nuevo p {
+  position: static;
+  width: 47px;
+  height: 16px;
+  left: 4px;
+  top: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0px 4px;
+}
+
+.demorado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 4px;
+  position: absolute;
+  width: 115px;
+  height: 20px;
+  left: 49px;
+  top: -1px;
+  background: linear-gradient(
+      0deg,
+      rgba(244, 92, 58, 0.1),
+      rgba(244, 92, 58, 0.1)
+    ),
+    #ffffff;
+  border-radius: 3px;
+}
+
+.demorado p {
+  position: static;
+  width: 107px;
+  height: 16px;
+  left: 4px;
+  top: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f45c3a;
+  margin: 0px 4px;
+}
+
+.entrega {
+  position: static;
+  min-height: 18px;
+  width: 100%;
+  left: 12px;
+  right: 12px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.entrega .entregaTex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 18px;
+}
+
+.entregaTex .texto {
+  position: static;
+}
+
+.entregaTex .texto:last-child {
+  margin: 0%;
+}
+
+.enProgreso {
+  font-weight: bold !important;
+  color: #1a1a1a !important;
+}
+
+.entrega .enDemora {
+  font-weight: bold;
+  color: #f45c3a;
+}
+
+.completeTex {
+  position: absolute;
+  height: 18px;
+  margin-left: 73px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1a1a1a;
+}
+
+.footer {
+  position: static;
   height: 40px;
   left: 0px;
   right: 0px;
   top: 164px;
-  flex: none;
-  order: 1;
   align-self: stretch;
-  flex-grow: 0;
   margin: 0px 0px;
-
-  /* UI / White */
-
-  background: #ffffff;
-  /* UI / Bordes */
-
-  border: 1px solid #dfdfda;
+  border-top: 1px solid #dfdfda;
   box-sizing: border-box;
+  background: #ffffff;
   border-radius: 0 0 8px 8px;
 }
 
-@media (min-width: 600px) {
-  .tareas {
-    min-height: 156px;
+.footer div {
+  position: absolute;
+  width: 100%;
+}
+
+.footer .iconMensaje {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 16px;
+  top: 11px;
+  opacity: 0.5;
+}
+
+.footer .iconMensaje svg {
+  width: 16px;
+  height: 16px;
+  color: #1a1a1a;
+}
+
+.comentarios {
+  opacity: 1 !important;
+}
+
+.asignatura {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 70px !important;
+  height: 24px;
+  left: 16px;
+  top: 8px;
+  border-radius: 16px;
+}
+
+.asignaturaTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: static;
+  width: 70px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  border: 1px solid #dfdfda;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin: 0px 4px;
+}
+
+.asignaturaTag .puntero {
+  position: static;
+  width: 8px;
+  height: 8px;
+  left: 8px;
+  top: 8px;
+  background: #01ceaa;
+  margin-left: 8px;
+  border-radius: 100%;
+}
+
+.asignaturaTag .asignaturaTex {
+  position: static;
+  width: 42px;
+  height: 16px;
+  left: 20px;
+  top: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1a1a1a;
+  margin: 0px 4px;
+}
+
+.progres {
+  position: static;
+  height: 18px;
+  width: 100%;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.texto {
+  position: absolute;
+  min-height: 18px;
+  margin-left: 73px;
+  font-size: 14px;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  color: #6d7878;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.progres .texto span {
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: 49px;
+}
+
+.icon svg {
+  width: 16px;
+  height: 16px;
+  color: #50d174;
+}
+
+@media (min-width: 768px) {
+  .info {
+    width: 720px;
+  }
+
+  .infoTex {
+    width: 387px;
   }
 }
 
 @media (min-width: 992px) {
-  .tareas {
-    min-height: 128px;
+  .contenido {
+    padding: 16px;
+  }
+
+  .actividad {
+    width: 56px;
+    height: 56px;
+  }
+
+  .infoTex {
+    position: absolute;
+    width: 330px;
+    height: 39px;
+    left: 88px;
+    top: 25px;
+  }
+
+  .infoTex p:last-child {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .entrega {
+    position: absolute;
+    width: 164px;
+    height: 36px;
+    left: 476px;
+    top: 26px;
+    margin-top: 0px;
+  }
+
+  .entrega .entregaTex {
+    flex-direction: column;
+  }
+
+  .texto {
+    margin-left: 40px;
+    position: static;
+  }
+
+  .entregaTex .texto:last-child {
+    margin-left: 40px;
+  }
+
+  .icon {
+    width: 24px !important;
+    height: 24px !important;
+    left: 0px;
+    margin-left: 0;
+    margin-top: 6px;
+  }
+
+  .demorado {
+    left: 76px;
+    margin-top: 2px;
+  }
+
+  .nuevo {
+    left: 76px;
+    margin-top: 2px;
+  }
+
+  .largeTex {
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .largeTex::after {
+    content: "...";
+    visibility: visible;
+    position: absolute;
+    right: -11px;
+  }
+
+  .progres {
+    position: absolute;
+    width: 97px;
+    height: 36px;
+    right: 168px;
+    top: 26px;
+    margin-top: 0px;
+  }
+
+  .progres .texto {
+    margin-left: 40px;
+  }
+
+  .completeTex {
+    margin-left: 40px;
+  }
+
+  .progres .texto span {
+    position: absolute;
+    top: 16px;
+  }
+
+  .icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .tag {
+    margin-top: 0;
   }
 }
