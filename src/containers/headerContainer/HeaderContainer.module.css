@@ -3,6 +3,8 @@
   height: 10vh;
   left: 0px;
   right: 0px;
+  min-width: 360px;
+  max-width: 1920px;
   top: 0px;
   background: #4f36d6;
   display: flex;
@@ -10,7 +12,7 @@
 }
 
 .h1 {
-  font-family: DM Sans;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 28px;

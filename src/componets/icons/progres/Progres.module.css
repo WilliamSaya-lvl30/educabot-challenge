@@ -1,0 +1,34 @@
+.progreso svg {
+  color: #dfdfda;
+}
+
+.progreso {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.circulo {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 1px;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.circulo svg {
+  display: inline-flex;
+  color: #50d174;
+}
+
+@media (min-width: 992px) {
+  .progreso {
+    width: 23px !important;
+    height: 23px !important;
+  }
+  .circulo {
+    width: 23px !important;
+    height: 23px !important;
+    top: 0px;
+  }
+}
